@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProspectEd Engagement Tracker | Guided Growth Marketing</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAEUUlEQVR4nO1b3U9TZxx+2hqqGXAaxMTxWT92ZT9QpyCNMI0avUBjdMm48Q8wMZlk4kdcdjM0meKF7Ha7YMncJiZoFIOIYqK1KNGOYiJ0RnGhWJFKQ9cv0nYX5izQ93xiym+057njPb/3fT7O7305PWl1UAFbbW1KTT0VBp1OndJa2cLFYloMcmHopS4udvOAvAfBdLLBuBCEuoHpgGw1Dwh708sVZBvSPUqeAbmA/wLIhbvPY7ZXffpAroD3rG0BagHU0OVi+89GzneAFgC1AGpoAVALoIYWALUAaixRO2GV2YwNdhtsFgvMlZUoLChAYWEhlhgMiESiCEfCeOP34++xMbx8NYrBoSEMe71IJBLzFplJTsUPQnUOB746eAB2q1W1gUgkgv6BAfT23YPT5UI0FlM0byE4ZQPgOA6nm4+htrqaufbE7UbXrR4MDg1hMhBAMpmEiePw2Zo12FZfh13bt8NgMMyZ83P7L/ipvV1S/EJySm6B8rIy/Nh6HsXLl88ZTyQSOHu+FTd7epg5bycm8HZiAg9cLvzecQXnWr7HiuJiScOUnKKHoInj0HqmhRECAK0X2wSFpMP74gW+Pn4C8XhckRgKTtEATh37BqUlJcz485ERXOvqUrQ4ALwaHcWlyx2Kaik4BQOwWSxw1NQITrhy9SpSKXUfIDs6O5FMJiVrKDgBkQAONTYKFidTKTxw9asSAgCB9+/hefZMsoaCExA4BI1GIzaurxIs9vv9CAaDqsUAwOGjTaLXKDh5MB1gt1qQl5cnWDz6+vW8hMiBgpMHE0BZSalo8btAICMiKDh5MAGYTJxocTQazYgICk4ezBmQ/0m+aLGS/61NR47gwL69kjXftZzB7bt3STl5MB0Q+ickuojYPv1YUHDyYAKYmhI/cZcajbILXmhrg2PHTjh27ETn9euKRFBw8mACGPP5RIuLiopULa4UFJw8mADcHo/ovqsoK8+ICApOHkwAsVgMT9xuweKST1ciP1/8wJovKDh5CD4Kt1/6TbhYr0fNpk0ZEULBCYgE8KfHA2e/8PP3/oaGjAih4AQkPg63/HAOvvFxZrzKZsUXW7dmRAwFp2gAU8Egmk6ewrvJSebatyeOY/PnGyUXLi8txXq7XZUYCk7Zd4ImjsPp5mZsqd7MXOvt60P37V4Me72YCgaxbNlSrF21Gtvq69GwZzfzEDPm8+HXPy7jRnc3ZmZm/hecit4K63Q61DkcaPzyIKzr1smVz0E8HsfDR4/Rc+cO7t2/r+glxUJyqv5+wGqzGRuqqmC3WlBZUfHhHX1BAfQGA0KhEKanp+EbH8ew9y88HxnBwNOnCIfDqgwsJKf2BQlqAdTQAqAWQA0tAGoB1NACoBZADS0ANT8wyjYMOp06rQOoBVBDD6j7nV22gPesTx/IBcz2qm2B2X/kQheke2Q6IJtDEPImaTZbXpZI3VTJMyAbukHOgyqDi6Uj1Ny4fwGRiVoyY+qLogAAAABJRU5ErkJggg==">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ProspectEd Engagement Tracker">
+<meta property="og:description" content="Live project status for the ProspectEd website rebuild and lead engine, by Guided Growth Marketing.">
+<meta property="og:image" content="https://prospected.guidedgrowthmktg.com/og-image.png">
+<meta property="og:url" content="https://prospected.guidedgrowthmktg.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ProspectEd Engagement Tracker">
+<meta name="twitter:description" content="Live project status. Guided Growth Marketing and ProspectEd.">
+<meta name="twitter:image" content="https://prospected.guidedgrowthmktg.com/og-image.png">
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#f5f3ee; --paper:#ffffff; --text:#2e3a3a; --text-soft:#46514f; --muted:#7b817c;
+    --line:#dcd9d1; --line-soft:#eeece6; --bar-track:#e8e6df; --note-bg:#f0eee7;
+    --header-bg:#2e3a3a; --header-text:#ffffff; --header-sub:#c7cec9; --brand:#b9c2bd;
+    --olive:#5c6650; --notstarted:#9aa0a0; --progress:#c9871f; --complete:#4f7d4a; --edlio:#2563eb;
+    --sec-num-bg:#2e3a3a; --sec-border:#2e3a3a;
+  }
+  html[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#171d1c; --paper:#212a29; --text:#e9edec; --text-soft:#c2c9c7; --muted:#8b9491;
+    --line:#33403e; --line-soft:#2b3534; --bar-track:#2b3534; --note-bg:#1b2322;
+    --header-bg:#0f1413; --header-text:#f3f6f5; --header-sub:#aab3b0; --brand:#8a958f;
+    --olive:#7d8a6e; --notstarted:#6b726f; --progress:#d39a3f; --complete:#5f9a58; --edlio:#2563eb;
+    --sec-num-bg:#3a4543; --sec-border:#445250;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--text);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 28px 64px;}
+
+  .cobrand{display:flex;align-items:center;gap:18px;margin-bottom:24px;padding:0 2px;color:var(--text);}
+  .cobrand .ggm-wm{font-weight:800;font-size:16px;letter-spacing:.3px;}
+  .cobrand .ggm-logo img{display:block;height:30px;width:auto;}
+  .cobrand .bdiv{width:1px;height:26px;background:var(--line);}
+  .cobrand .edlio-logo{display:inline-flex;align-items:center;}
+  .cobrand .edlio-logo svg{height:21px;width:auto;display:block;color:var(--edlio);}
+
+  header{background:var(--header-bg);color:var(--header-text);border-radius:12px;padding:26px 30px;margin-bottom:22px;}
+  .hrow{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;}
+  .eyebrow{font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--brand);margin-bottom:9px;}
+  header h1{font-size:23px;line-height:1.2;margin:0 0 7px;letter-spacing:.2px;font-weight:800;}
+  header .sub{color:var(--header-sub);font-size:13.5px;}
+  .hmeta{display:flex;gap:26px;flex-wrap:wrap;}
+  .mitem{display:flex;flex-direction:column;gap:3px;}
+  .mitem .ml{font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--brand);}
+  .mitem .mv{font-size:14px;color:var(--header-text);font-weight:600;}
+  @media (max-width:600px){.hrow{align-items:flex-start;}.hmeta{gap:18px;}}
+
+  .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:22px;}
+  button.act{border:1px solid var(--text);background:var(--text);color:var(--bg);border-radius:7px;padding:9px 16px;
+    font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;}
+  button.act.ghost{background:transparent;color:var(--text-soft);border-color:var(--line);}
+  button.act:hover{opacity:.9;}
+  .updated{font-size:12.5px;color:var(--muted);margin-left:auto;}
+  .updated b{color:var(--text-soft);}
+  body.printing .toolbar{display:none;}
+
+  section{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:6px 24px 18px;margin-bottom:22px;}
+  .sec-head{display:flex;align-items:center;gap:12px;padding:16px 0 10px;border-bottom:2px solid var(--sec-border);margin-bottom:6px;}
+  .sec-num{background:var(--sec-num-bg);color:#fff;font-weight:700;font-size:13px;width:26px;height:26px;border-radius:6px;
+    display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .sec-head h3{margin:0;font-size:15px;letter-spacing:.6px;text-transform:uppercase;}
+  .sec-prog{margin-left:auto;font-size:12px;color:var(--muted);}
+
+  .objective{font-size:14.5px;color:var(--text-soft);margin:14px 0 4px;max-width:760px;}
+  .contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px;}
+  .contact{border:1px solid var(--line);border-radius:9px;padding:12px 14px;}
+  .contact .cn{font-weight:700;font-size:13.5px;}
+  .contact .cr{font-size:12px;color:var(--progress);font-weight:600;margin-top:2px;}
+  .contact .co{font-size:12px;color:var(--muted);margin-top:2px;}
+
+  .overall .toprow{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 10px;}
+  .overall h2{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin:0;color:var(--text-soft);}
+  .overall .pct{font-size:30px;font-weight:800;color:var(--text);}
+  .bar{height:14px;background:var(--bar-track);border-radius:8px;overflow:hidden;}
+  .bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--olive),var(--complete));border-radius:8px;transition:width .3s ease;}
+  .counts{font-size:12.5px;color:var(--muted);margin-top:10px;}
+  .counts b{color:var(--text);}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:var(--muted);margin-top:10px;}
+  .legend .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle;}
+
+  table{width:100%;border-collapse:collapse;}
+  th{text-align:left;font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);
+    font-weight:600;padding:12px 8px 6px;border-bottom:1px solid var(--line);}
+  td{padding:11px 8px;border-bottom:1px solid var(--line-soft);vertical-align:middle;font-size:13.5px;}
+  tr:last-child td{border-bottom:none;}
+  .deliv{width:56%;font-weight:500;} .col-status{width:140px;} .col-date{width:120px;}
+  .pill{display:inline-block;border-radius:20px;padding:5px 13px;font-size:12px;font-weight:600;color:#fff;white-space:nowrap;}
+  .s-notstarted{background:var(--notstarted);} .s-progress{background:var(--progress);} .s-complete{background:var(--complete);}
+  .date-val{color:var(--text-soft);} .date-val.none{color:var(--muted);opacity:.6;}
+
+  .timeline .month{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line-soft);}
+  .timeline .month:last-child{border-bottom:none;}
+  .timeline .mlabel{flex:0 0 150px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.5px;}
+  .timeline .mlabel span{display:block;font-weight:400;font-size:11.5px;color:var(--muted);letter-spacing:0;text-transform:none;margin-top:2px;}
+  .timeline ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--text-soft);}
+  .timeline li{margin-bottom:3px;}
+
+  .scope-note{font-size:12px;color:var(--muted);background:var(--note-bg);border-radius:8px;padding:12px 16px;margin-bottom:22px;}
+  .scope-note b{color:var(--text-soft);}
+  footer{text-align:center;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:34px;}
+
+  @media (max-width:680px){.contacts{grid-template-columns:1fr;}}
+
+  @media print{
+    :root, html[data-theme="dark"]{
+      --bg:#fff; --paper:#fff; --text:#2e3a3a; --text-soft:#46514f; --muted:#7b817c;
+      --line:#ccc; --line-soft:#e5e5e5; --bar-track:#e8e6df; --note-bg:#f0eee7;
+      --header-bg:#2e3a3a; --header-text:#fff; --header-sub:#c7cec9; --brand:#b9c2bd;
+      --sec-num-bg:#2e3a3a; --sec-border:#2e3a3a;
+    }
+    body{background:#fff;} .wrap{max-width:none;padding:0;} .toolbar{display:none;}
+    header,section{border:1px solid #ccc;box-shadow:none;break-inside:avoid;}
+    .pill,.bar span,header,.sec-num{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+
+  .trackbadge{display:inline-flex;align-items:center;gap:7px;margin-top:13px;font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;background:rgba(255,255,255,.10);color:var(--header-text);}
+  .trackbadge .tb-dot{width:8px;height:8px;border-radius:50%;}
+  .tb-green .tb-dot{background:#5fbf6a;} .tb-amber .tb-dot{background:#e0a93f;} .tb-done .tb-dot{background:#7fd089;}
+  .mini{height:5px;width:90px;flex:0 0 auto;background:var(--bar-track);border-radius:4px;overflow:hidden;margin-left:14px;}
+  .mini span{display:block;height:100%;background:var(--complete);border-radius:4px;}
+  .viewlink{font-size:11.5px;font-weight:600;color:var(--edlio);text-decoration:none;white-space:nowrap;margin-left:8px;}
+  .viewlink:hover{text-decoration:underline;}
+  .feed .fitem{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line-soft);}
+  .feed .fitem:last-child{border-bottom:none;}
+  .feed .fdate{flex:0 0 80px;color:var(--muted);font-size:12px;font-weight:600;padding-top:1px;}
+  .feed .ftext{color:var(--text-soft);font-size:13.5px;}
+  .nspra{display:flex;align-items:center;gap:14px;background:var(--note-bg);border:1px solid var(--line);border-left:4px solid var(--edlio);border-radius:10px;padding:14px 18px;margin-bottom:22px;}
+  .nspra .nlabel{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--edlio);font-weight:700;margin-bottom:3px;}
+  .nspra .ntext{font-size:13.5px;color:var(--text-soft);} .nspra .ntext b{color:var(--text);}
+  .tabs{display:flex;gap:4px;margin-bottom:20px;border-bottom:1px solid var(--line);}
+  .tab{border:none;background:none;font-family:inherit;font-size:13.5px;font-weight:600;color:var(--muted);padding:10px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;}
+  .tab:hover{color:var(--text-soft);}
+  .tab.active{color:var(--text);border-bottom-color:var(--edlio);}
+  .view[hidden]{display:none;}
+  body.printing .tabs{display:none;}
+  @media print{ .tabs{display:none;} .view[hidden]{display:block !important;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cobrand">
+    <span class="ggm-logo" id="ggm-logo"><span class="ggm-wm">Guided Growth Marketing</span></span>
+    <span class="bdiv" aria-hidden="true"></span>
+    <span class="edlio-logo" role="img" aria-label="ProspectEd"><span style="font-weight:800;font-size:18px;letter-spacing:.2px;color:var(--edlio);">ProspectEd</span></span>
+  </div>
+
+  <header>
+    <div class="hrow">
+      <div class="htitle">
+        <div class="eyebrow">Engagement Tracker</div>
+        <h1>Website Rebuild &amp; Lead Engine</h1>
+        <div class="sub" id="subline"></div>
+        <div class="trackbadge" id="trackbadge"></div>
+      </div>
+      <div class="hmeta" id="hmeta"></div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <button class="act" onclick="downloadPDF()">Save as PDF</button>
+    <button class="act ghost" id="themeBtn" onclick="toggleTheme()">Dark mode</button>
+    <div class="updated">Last updated <b id="updated">-</b> &middot; Next update <b id="nextupd">-</b></div>
+  </div>
+
+  <section class="overall">
+    <div class="toprow"><h2>Overall Progress</h2><div class="pct" id="pct">0%</div></div>
+    <div class="bar"><span id="barfill"></span></div>
+    <div class="counts" id="counts"></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--notstarted)"></span>Not started</span>
+      <span><span class="dot" style="background:var(--progress)"></span>In progress</span>
+      <span><span class="dot" style="background:var(--complete)"></span>Complete</span>
+    </div>
+  </section>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-view="deliverables" onclick="showView('deliverables')">Deliverables</button>
+    <button class="tab" data-view="overview" onclick="showView('overview')">Overview</button>
+    <button class="tab" data-view="activity" onclick="showView('activity')">Activity</button>
+  </div>
+
+  <div id="view-deliverables" class="view">
+  <div id="sections"></div>
+  </div>
+
+  <div id="view-overview" class="view" hidden>
+  <section class="overview">
+    <div class="sec-head"><span class="sec-num" style="background:var(--olive)">✦</span><h3>Engagement Overview</h3></div>
+    <p class="objective" id="objective"></p>
+    <div class="contacts" id="contacts"></div>
+  </section>
+  <section class="timeline">
+    <div class="sec-head"><span class="sec-num" style="background:var(--olive)">★</span><h3>Milestone Timeline</h3></div>
+    <div class="month">
+      <div class="mlabel">June<span>Foundation and build</span></div>
+      <ul>
+        <li>New site redesign and Webflow rebuild</li>
+        <li>On-page SEO, social card, and privacy policy</li>
+        <li>Conversion tracking setup</li>
+        <li>Production launch on prospect-ed.com</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="mlabel">July<span>Run and optimize</span></div>
+      <ul>
+        <li>LinkedIn paid and retargeting campaigns launched</li>
+        <li>Email nurture sequence for inbound leads</li>
+        <li>Content plan and lead magnet to support campaigns</li>
+      </ul>
+    </div>
+    <div class="month">
+      <div class="mlabel">August<span>Scale and systemize</span></div>
+      <ul>
+        <li>Optimize ads, audiences, and landing pages</li>
+        <li>Monthly performance reporting (leads, booked calls, CPL, conversion)</li>
+        <li>Final performance summary and recommended next steps</li>
+      </ul>
+    </div>
+  </section>
+  <div class="scope-note">
+    <b>Not included:</b> Paid media spend is separate and paid directly by ProspectEd (recommended starting budget $1,500 to $3,000 per month).
+  </div>
+  </div>
+
+  <div id="view-activity" class="view" hidden>
+  <section class="feed" id="feed">
+    <div class="sec-head"><span class="sec-num" style="background:var(--olive)">&#8635;</span><h3>Recent Updates</h3></div>
+    <div id="feed-list"></div>
+  </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>www.guidedgrowthmktg.com</footer>
+</div>
+
+<!-- CLIENT DATA: sanitized mirror of tracker-data.json (no internal notes, no overdue context). The scheduled task replaces the contents of this block each run. -->
+<script id="tracker-data" type="application/json">
+{
+  "engagement": {
+    "client": "ProspectEd",
+    "preparedFor": "Brett Felten",
+    "dates": "Jun 1 \u2013 Aug 31, 2026",
+    "note": "Fixed 3-month engagement",
+    "objective": "Build a simple, repeatable lead engine for the executive search side of the business by improving the website conversion path and running targeted campaigns to generate qualified hiring conversations.",
+    "contacts": [
+      {
+        "name": "Jimmy Montchal",
+        "org": "Guided Growth Marketing",
+        "role": "Owner"
+      },
+      {
+        "name": "Brett Felten",
+        "org": "ProspectEd",
+        "role": "Managing Partner, primary contact"
+      },
+      {
+        "name": "Brian Molitor",
+        "org": "ProspectEd",
+        "role": "Managing Partner"
+      },
+      {
+        "name": "Sarah",
+        "org": "ProspectEd",
+        "role": "Roles in EdTech lead"
+      }
+    ]
+  },
+  "lastUpdated": "2026-06-24",
+  "sections": [
+    {
+      "num": "1",
+      "title": "Website (Month 1: Foundation and Build)",
+      "items": [
+        {
+          "id": "w1a",
+          "label": "Full site redesign across homepage and service pages",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-23"
+        },
+        {
+          "id": "w1b",
+          "label": "Career Development hub and Roles in EdTech page",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1c",
+          "label": "Rebuild the site in Webflow to match the new design",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1d",
+          "label": "On-page SEO across all pages (titles, meta descriptions, social card)",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-24"
+        },
+        {
+          "id": "w1e",
+          "label": "Privacy policy page",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-24"
+        },
+        {
+          "id": "w1f",
+          "label": "Improve contact flow and Roles intake form",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1g",
+          "label": "Conversion tracking setup",
+          "status": "notstarted",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1h",
+          "label": "New site live on prospect-ed.com",
+          "status": "notstarted",
+          "target": "2026-06-30",
+          "done": ""
+        }
+      ]
+    },
+    {
+      "num": "2",
+      "title": "Lead Gen Campaigns (Month 2: Run and Optimize)",
+      "items": [
+        {
+          "id": "l2a",
+          "label": "LinkedIn paid and retargeting campaigns (decision-maker targeting)",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "l2b",
+          "label": "Email nurture sequence for inbound leads",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "l2c",
+          "label": "Content plan and lead magnet to support campaigns",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        }
+      ]
+    },
+    {
+      "num": "R",
+      "title": "Reporting and Optimization (Month 3: Scale and Systemize)",
+      "items": [
+        {
+          "id": "r1",
+          "label": "Monthly performance reporting (leads, booked calls, CPL, conversion rates)",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "r2",
+          "label": "Ongoing testing and optimization (ads, offers, landing page tweaks)",
+          "status": "notstarted",
+          "target": "2026-08-31",
+          "done": ""
+        },
+        {
+          "id": "r3",
+          "label": "Final performance summary and recommended next steps",
+          "status": "notstarted",
+          "target": "2026-08-31",
+          "done": ""
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-06-01",
+      "text": "Engagement started."
+    },
+    {
+      "date": "2026-06-18",
+      "text": "Roles in EdTech program build kicked off with the ProspectEd team."
+    },
+    {
+      "date": "2026-06-22",
+      "text": "Career Development hub and Roles in EdTech page designed and built into the new site."
+    },
+    {
+      "date": "2026-06-24",
+      "text": "Site rebuilt in Webflow across the content pages, with SEO titles, meta descriptions, and a custom social card applied site-wide and a new privacy policy page. Staged for review ahead of production launch."
+    }
+  ]
+}
+</script>
+
+<script>
+// GGM logo: set ggmLight (for dark backgrounds) and ggmDark (for light backgrounds) to data: URIs to swap in the real mark.
+const LOGOS = { ggmLight: "data:image/png;base64,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", ggmDark: "data:image/png;base64,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" };
+const STATUS_LABEL = { notstarted:"Not started", progress:"In progress", blocked:"In progress", complete:"Complete" };
+const STATUS_CLASS = { notstarted:"notstarted", progress:"progress", blocked:"progress", complete:"complete" };
+const DATA = JSON.parse(document.getElementById('tracker-data').textContent);
+
+function fmt(d){ if(!d) return ""; const dt=new Date(d+"T00:00:00"); return isNaN(dt)?d:dt.toLocaleDateString('en-US',{month:'short',day:'numeric'}); }
+function linksHtml(it){
+  var ls = (it.links && it.links.length) ? it.links : (it.link ? [{label:'View', url:it.link}] : []);
+  return ls.map(function(l){ return ' <a class="viewlink" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+' &#8599;</a>'; }).join('');
+}
+
+function applyGgmLogo(theme){
+  const slot=document.getElementById('ggm-logo');
+  const src = theme==='dark' ? LOGOS.ggmLight : LOGOS.ggmDark;
+  if(src){ slot.classList.add('ggm-logo'); slot.innerHTML='<img alt="Guided Growth Marketing" src="'+src+'">'; }
+}
+function downloadPDF(){ window.print(); }
+function toggleTheme(){
+  const cur = document.documentElement.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+  setTheme(cur);
+  try{ localStorage.setItem('prospected-theme', cur); }catch(e){}
+}
+function setTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  document.getElementById('themeBtn').textContent = t==='dark' ? 'Light mode' : 'Dark mode';
+  applyGgmLogo(t);
+}
+
+function renderBadge(pct){
+  const b=document.getElementById('trackbadge'); if(!b) return;
+  const done=pct>=100;
+  b.className='trackbadge '+(done?'tb-done':'tb-green');
+  b.innerHTML='<span class="tb-dot"></span>'+(done?'All deliverables complete':'On track');
+}
+function showView(v){
+  document.querySelectorAll('.view').forEach(el=>{ el.hidden = (el.id!=='view-'+v); });
+  document.querySelectorAll('.tab').forEach(b=>{ b.classList.toggle('active', b.dataset.view===v); });
+}
+function renderFeed(){
+  const log=(DATA.log||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,8);
+  const list=document.getElementById('feed-list');
+  list.innerHTML = log.length
+    ? log.map(e=>`<div class="fitem"><span class="fdate">${fmt(e.date)}</span><span class="ftext">${e.text||''}</span></div>`).join('')
+    : '<div class="fitem"><span class="ftext" style="color:var(--muted)">No updates yet. This feed fills in as work ships.</span></div>';
+}
+function nextSync(){ const d=new Date(); d.setHours(0,0,0,0); for(let i=1;i<=7;i++){ const x=new Date(d); x.setDate(d.getDate()+i); const w=x.getDay(); if(w===1) return x; } return null; }
+function render(){
+  const e=DATA.engagement;
+  document.getElementById('subline').textContent = "Prepared for " + (e.preparedFor||"");
+  document.getElementById('objective').textContent = e.objective || "";
+  document.getElementById('contacts').innerHTML = (e.contacts||[]).map(c=>
+    `<div class="contact"><div class="cn">${c.name}</div><div class="cr">${c.role||''}</div><div class="co">${c.org||''}</div></div>`).join('');
+
+  const root=document.getElementById('sections'); root.innerHTML="";
+  DATA.sections.forEach(sec=>{
+    const el=document.createElement('section');
+    const sc=sec.items.filter(i=>i.status==="complete").length, st=sec.items.length, sp=Math.round(sc/st*100);
+    el.innerHTML=`
+      <div class="sec-head"><span class="sec-num">${sec.num}</span><h3>${sec.title}</h3>
+        <span class="sec-prog">${sc}/${st} complete</span><div class="mini"><span style="width:${sp}%"></span></div></div>
+      <table>
+        <thead><tr><th class="deliv">Deliverable</th><th class="col-status">Status</th><th class="col-date">Target</th><th class="col-date">Completed</th></tr></thead>
+        <tbody>${sec.items.map(it=>`<tr>
+          <td class="deliv">${it.label}${linksHtml(it)}</td>
+          <td><span class="pill s-${STATUS_CLASS[it.status]}">${STATUS_LABEL[it.status]}</span></td>
+          <td><span class="date-val ${it.target?'':'none'}">${it.target?fmt(it.target):'-'}</span></td>
+          <td><span class="date-val ${it.done?'':'none'}">${it.done?fmt(it.done):'-'}</span></td></tr>`).join('')}</tbody>
+      </table>`;
+    root.appendChild(el);
+  });
+
+  const all=DATA.sections.flatMap(s=>s.items), total=all.length;
+  const c=all.filter(i=>i.status==="complete").length;
+  const p=all.filter(i=>i.status==="progress"||i.status==="blocked").length;
+  const n=all.filter(i=>i.status==="notstarted").length;
+  const pct=Math.round((c/total)*100);
+  document.getElementById('pct').textContent=pct+"%";
+  document.getElementById('barfill').style.width=pct+"%";
+  document.getElementById('counts').innerHTML=`<b>${c}</b> complete &middot; <b>${p}</b> in progress &middot; <b>${n}</b> upcoming &middot; <b>${total}</b> total deliverables`;
+  document.getElementById('hmeta').innerHTML=`<div class="mitem"><span class="ml">Timeline</span><span class="mv">${e.dates}</span></div><div class="mitem"><span class="ml">Engagement</span><span class="mv">${e.note}</span></div><div class="mitem"><span class="ml">Progress</span><span class="mv">${pct}% complete</span></div>`;
+  const _lu=DATA.lastUpdated?new Date(DATA.lastUpdated+'T00:00:00'):null; document.getElementById('updated').textContent=_lu?_lu.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):"-";
+  const _ns=nextSync(); document.getElementById('nextupd').textContent=_ns?_ns.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}):"-";
+  renderBadge(pct); renderFeed();
+}
+
+(function init(){
+  let t="light";
+  try{ t = localStorage.getItem('prospected-theme') || "light"; }catch(e){}
+  setTheme(t);
+  render();
+})();
+</script>
+</body>
+</html>

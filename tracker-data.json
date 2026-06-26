@@ -1,0 +1,168 @@
+{
+  "engagement": {
+    "client": "ProspectEd",
+    "preparedFor": "Brett Felten",
+    "dates": "Jun 1 \u2013 Aug 31, 2026",
+    "note": "Fixed 3-month engagement",
+    "objective": "Build a simple, repeatable lead engine for the executive search side of the business by improving the website conversion path and running targeted campaigns to generate qualified hiring conversations.",
+    "contacts": [
+      {
+        "name": "Jimmy Montchal",
+        "org": "Guided Growth Marketing",
+        "role": "Owner"
+      },
+      {
+        "name": "Brett Felten",
+        "org": "ProspectEd",
+        "role": "Managing Partner, primary contact"
+      },
+      {
+        "name": "Brian Molitor",
+        "org": "ProspectEd",
+        "role": "Managing Partner"
+      },
+      {
+        "name": "Sarah",
+        "org": "ProspectEd",
+        "role": "Roles in EdTech lead"
+      }
+    ]
+  },
+  "lastUpdated": "2026-06-24",
+  "sections": [
+    {
+      "num": "1",
+      "title": "Website (Month 1: Foundation and Build)",
+      "items": [
+        {
+          "id": "w1a",
+          "label": "Full site redesign across homepage and service pages",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-23"
+        },
+        {
+          "id": "w1b",
+          "label": "Career Development hub and Roles in EdTech page",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1c",
+          "label": "Rebuild the site in Webflow to match the new design",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1d",
+          "label": "On-page SEO across all pages (titles, meta descriptions, social card)",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-24"
+        },
+        {
+          "id": "w1e",
+          "label": "Privacy policy page",
+          "status": "complete",
+          "target": "2026-06-30",
+          "done": "2026-06-24"
+        },
+        {
+          "id": "w1f",
+          "label": "Improve contact flow and Roles intake form",
+          "status": "progress",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1g",
+          "label": "Conversion tracking setup",
+          "status": "notstarted",
+          "target": "2026-06-30",
+          "done": ""
+        },
+        {
+          "id": "w1h",
+          "label": "New site live on prospect-ed.com",
+          "status": "notstarted",
+          "target": "2026-06-30",
+          "done": ""
+        }
+      ]
+    },
+    {
+      "num": "2",
+      "title": "Lead Gen Campaigns (Month 2: Run and Optimize)",
+      "items": [
+        {
+          "id": "l2a",
+          "label": "LinkedIn paid and retargeting campaigns (decision-maker targeting)",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "l2b",
+          "label": "Email nurture sequence for inbound leads",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "l2c",
+          "label": "Content plan and lead magnet to support campaigns",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        }
+      ]
+    },
+    {
+      "num": "R",
+      "title": "Reporting and Optimization (Month 3: Scale and Systemize)",
+      "items": [
+        {
+          "id": "r1",
+          "label": "Monthly performance reporting (leads, booked calls, CPL, conversion rates)",
+          "status": "notstarted",
+          "target": "2026-07-31",
+          "done": ""
+        },
+        {
+          "id": "r2",
+          "label": "Ongoing testing and optimization (ads, offers, landing page tweaks)",
+          "status": "notstarted",
+          "target": "2026-08-31",
+          "done": ""
+        },
+        {
+          "id": "r3",
+          "label": "Final performance summary and recommended next steps",
+          "status": "notstarted",
+          "target": "2026-08-31",
+          "done": ""
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-06-01",
+      "text": "Engagement started."
+    },
+    {
+      "date": "2026-06-18",
+      "text": "Roles in EdTech program build kicked off with the ProspectEd team."
+    },
+    {
+      "date": "2026-06-22",
+      "text": "Career Development hub and Roles in EdTech page designed and built into the new site."
+    },
+    {
+      "date": "2026-06-24",
+      "text": "Site rebuilt in Webflow across the content pages, with SEO titles, meta descriptions, and a custom social card applied site-wide and a new privacy policy page. Staged for review ahead of production launch."
+    }
+  ]
+}
